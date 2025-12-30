@@ -41,15 +41,7 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center">
 
           <Link to="/" className="flex items-center gap-3 group relative z-[110]">
-            <div className="w-10 h-10 bg-brand-navy dark:bg-white rounded-lg flex items-center justify-center shadow-lg group-hover:rotate-6 transition-all duration-500 overflow-hidden">
-              <img src="/SMART-HUB-LOGO-ORIGINAL.png" alt="Smart Hub Logo" className="w-full h-full object-cover" />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-black text-xl tracking-tighter text-brand-navy dark:text-white leading-none">
-                SMART <span className="text-brand-blue">HUB</span>
-              </span>
-              <span className="text-[8px] uppercase tracking-[0.3em] text-slate-400 dark:text-slate-500 font-bold mt-0.5">EST. 2016</span>
-            </div>
+            <img src="/SMART-HUB-LOGO-ORIGINAL.png" alt="Smart Hub Logo" className="h-10 w-auto object-contain" />
           </Link>
 
           <div className="hidden lg:flex items-center gap-8">

@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center">
 
           <Link to="/" className="flex items-center gap-3 group relative z-[110]">
-            <img src="/SMART-HUB-LOGO-ORIGINAL.png" alt="Smart Hub Logo" className="h-10 w-auto object-contain" />
+            <img src="/SMART-HUB-LOGO-ORIGINAL.png" alt="Smart Hub Logo" className="h-16 w-auto object-contain" />
           </Link>
 
           <div className="hidden lg:flex items-center gap-8">

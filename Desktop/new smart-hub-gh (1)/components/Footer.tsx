@@ -15,16 +15,14 @@ const Footer: React.FC = () => {
   return (
     <footer className="sticky bottom-0 -z-0 w-full bg-slate-50 dark:bg-slate-950 transition-colors duration-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8">
-          
+
           {/* Big Brand & CTA Section */}
           <div className="lg:col-span-6 flex flex-col justify-between">
             <div>
               <div className="flex items-center gap-4 mb-8">
-                <div className="w-12 h-12 bg-brand-blue rounded-xl flex items-center justify-center text-white shadow-lg">
-                  <Heart size={24} fill="currentColor" />
-                </div>
+                <img src="/SMART-HUB-LOGO-ORIGINAL.png" alt="Smart Hub Logo" className="h-20 w-auto object-contain" />
                 <h2 className="text-4xl md:text-6xl font-black text-brand-navy dark:text-white tracking-tighter uppercase leading-none">
                   Impact <br />
                   <span className="text-brand-blue">Starts Now.</span>
@@ -37,10 +35,10 @@ const Footer: React.FC = () => {
 
             <div className="flex flex-wrap gap-4">
               {socialLinks.map((social) => (
-                <a 
+                <a
                   key={social.name}
-                  href={social.url} 
-                  target="_blank" 
+                  href={social.url}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-center gap-3 px-6 py-4 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl hover:bg-brand-blue hover:border-brand-blue dark:hover:bg-brand-blue transition-all duration-300"
                 >
@@ -63,8 +61,8 @@ const Footer: React.FC = () => {
                 { name: 'Support Us', path: '/contact' }
               ].map((link) => (
                 <li key={link.name}>
-                  <Link 
-                    to={link.path} 
+                  <Link
+                    to={link.path}
                     className="text-2xl md:text-3xl font-black text-brand-navy dark:text-white uppercase tracking-tighter hover:text-brand-blue dark:hover:text-brand-blue transition-all inline-flex items-center gap-2 group"
                   >
                     {link.name}
@@ -118,21 +116,21 @@ const Footer: React.FC = () => {
         {/* Bottom Credits */}
         <div className="mt-20 pt-10 border-t border-slate-200 dark:border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-4">
-             <div className="flex gap-1 h-3">
-               <div className="w-4 bg-red-600"></div>
-               <div className="w-4 bg-yellow-400"></div>
-               <div className="w-4 bg-green-600"></div>
-             </div>
-             <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 dark:text-slate-500">
-               Smart Youth Connkt LBG • Based in Ghana
-             </p>
+            <div className="flex gap-1 h-3">
+              <div className="w-4 bg-red-600"></div>
+              <div className="w-4 bg-yellow-400"></div>
+              <div className="w-4 bg-green-600"></div>
+            </div>
+            <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 dark:text-slate-500">
+              Smart Youth Connkt LBG • Based in Ghana
+            </p>
           </div>
-          
+
           <div className="flex items-center gap-8">
             <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 dark:text-slate-500">
               © {currentYear} SMART HUB GH
             </p>
-            <button 
+            <button
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="text-[10px] font-black uppercase tracking-widest text-brand-navy dark:text-white hover:text-brand-blue transition-colors flex items-center gap-2 group"
             >
